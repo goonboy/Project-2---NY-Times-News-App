@@ -1,0 +1,183 @@
+/* FONTS generated from Font Squirrel */
+
+/* Open_Sansbold */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('opensans-bold-webfont.eot');
+    src: url('opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-bold-webfont.woff2') format('woff2'),
+         url('opensans-bold-webfont.woff') format('woff'),
+         url('opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('opensans-bolditalic-webfont.eot');
+    src: url('opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('opensans-bolditalic-webfont.woff') format('woff'),
+         url('opensans-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('opensans-light-webfont.eot');
+    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light-webfont.woff2') format('woff2'),
+         url('opensans-light-webfont.woff') format('woff'),
+         url('opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('opensans-lightitalic-webfont.eot');
+    src: url('opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('opensans-lightitalic-webfont.woff') format('woff'),
+         url('opensans-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*  ----- SCREEN SIZES ---- */
+
+$desktop-width: 1000px;
+$tablet-width: 600px;
+$mobile-width: 480px;
+
+@mixin desktop {
+  @media (min-width: $destkop-width){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin mobilt {
+  @media (min-width: $mobile-width) {
+    @content;
+  }
+
+}
+
+
+
+/* GLOBAL STYLES */
+
+body {
+
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  background-color: #000;
+  color: #fff;
+}
+
+.screen-reader {
+
+  display: none;
+}
+
+* {
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+
+}
+
+.header {
+  justify-content: center;
+  align-content: center;
+  margin-top: 8rem;
+}
+
+.logo {
+
+  height: auto;
+  max-width: 100%;
+  flex: 0 1 25%;
+  text-align: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+
+}
+
+.dropdown-menu-inner {
+
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+
+.dropdown-menu-inner p {
+
+  font-size: 0.75rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+#dropdown-menu-options {
+
+  width: 185px;
+  height: 40px;
+  font-size: xx-large;
+}
+
+#sections {
+
+}
+
+.site-footer {
+
+  text-align: left;
+  display: block;
+}
+
+.site-footer span {
+
+  text-transform: uppercase;
+
+
+}
+
+.site-footer p {
+  color: #c2c2c2;
+  font: Open Sanslight;
+  font-size: 9px;
+  font-size: .9rem;
+  height: 10vh;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+  width: 300px;
+  width: 100%;
+  bottom: 0;
+  /* padding-bottom: 0; */
+
+}
