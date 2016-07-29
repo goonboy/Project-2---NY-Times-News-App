@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+<<<<<<< HEAD
   $('#dropdown-menu-options').on('change',function(event) {
     event.preventDefault();
     //Setting options value in variable
@@ -56,6 +57,39 @@ $(document).ready(function() {
   var nytData = data.results;
 
   if (nytData.length !== 0) {
+=======
+$('#dropdown-menu-options').val();
+
+$(function(){
+var selection = $('.choose').val();
+
+var url = "https://api.nytimes.com/svc/topstories/v2/" + selection + ".json";
+url += '?' + $.param({
+'api-key': "=5f1e5040697847d88a61f83ed130ec5a"
+});
+
+
+
+$.ajax ({
+  url: url,
+  method: 'GET',
+  dataType: 'json'
+})
+
+.done(function(result) {
+  console.log(result);
+})
+
+.fail(function(err) {
+  throw err;
+})
+
+
+  var nytData = data.results;
+
+
+ if (nytData.length !== 0) {
+>>>>>>> 280d6e73a6fe7e3571fdb0806ed7b71adde9e891
 
     nytItems += '<ul>';
 
@@ -77,6 +111,7 @@ $(document).ready(function() {
         nytItems += '</a>'
         nytItems += '<li>'
       }
+<<<<<<< HEAD
     }
   }
   .fail(function(err) {
@@ -87,3 +122,7 @@ $(document).ready(function() {
 -----*/
   
 
+=======
+    } 
+  }
+>>>>>>> 280d6e73a6fe7e3571fdb0806ed7b71adde9e891
