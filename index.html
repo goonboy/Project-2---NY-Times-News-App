@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NY Times API</title>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+		rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="logo">
+				<h1 class="screen-reader">Instanews - New York Times News Reader</h1>
+				<img src="images/nyt-logo.svg" alt="New York Times logo">
+			</div>
+			<form class="dropdown-menu">
+				<div class="dropdown-menu-inner">
+					<p>Choose a section:</p>
+					<select name="dropdown-menu-options" id="dropdown-menu-options">
+						<option value="sections">Sections ...</option>
+						<option value="home">Home</option>
+						<option value="science">Science</option>
+						<option value="business">Business</option>
+						<option value="sports">Sports</option>
+						<option value="technology">Technology</option>
+						<option value="fashion">Fashion</option>
+					</select>
+				
+				</div>
+			</form>
+		</header>
+	</div>
+	<div class="news-grid"></div>
+	<footer class="site-footer">
+		<p>© Copyright 2016 <span>INSTANEWS</span></p>
+	</footer>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
