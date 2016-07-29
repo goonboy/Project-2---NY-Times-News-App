@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-<<<<<<< HEAD
   $('#dropdown-menu-options').on('change',function(event) {
     event.preventDefault();
     //Setting options value in variable
@@ -57,7 +56,7 @@ $(document).ready(function() {
   var nytData = data.results;
 
   if (nytData.length !== 0) {
-=======
+
 $('#dropdown-menu-options').val();
 
 $(function(){
@@ -122,7 +121,3 @@ $.ajax ({
 -----*/
   
 
-=======
-    } 
-  }
->>>>>>> 280d6e73a6fe7e3571fdb0806ed7b71adde9e891
